@@ -1,0 +1,26 @@
+@import "normalize.css";
+@import "sanitize.css";
+// @import "fontface.css";
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "OpenSans-Regular", sans-serif;
+  color: $basicColor;
+  height: 100%;
+  overflow: hidden;
+}
+
+#app {
+  min-height: 100%;
+  position: relative;
+}
+
+.container {
+  padding: 20px;
+  height: 100%;
+  position: relative;
+  min-height: 88.6vh;
+}
