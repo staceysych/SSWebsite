@@ -8,9 +8,21 @@
   margin: 0;
   font-size: 100px;
   position: absolute;
-  top: 120px;
+  top: 160px;
   left: 150px;
   z-index: 9;
+}
+
+.subheader {
+  color: $mainLightColor;
+  margin: 0;
+  font-size: 20px;
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: lighter;
 }
 
 .redCircle {
@@ -35,4 +47,12 @@
     height: 100%;
     width: 100%;
   }
+}
+
+.dottedLine {
+  border-bottom: 3px dotted $mainLightColor;
+  width: 92vw;
+  position: absolute;
+  bottom: 125px;
+  right: 0;
 }
