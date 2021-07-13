@@ -10,6 +10,8 @@ body {
   font-family: "OpenSans-Regular", sans-serif;
   height: 100%;
   overflow: hidden;
+  background-color: $mainDarkColor;
+  min-height: 100vh;
 }
 
 #app {
@@ -18,8 +20,7 @@ body {
 }
 
 .container {
-  padding: 20px;
   height: 100%;
   position: relative;
-  min-height: 88.6vh;
+  min-height: 100vh;
 }

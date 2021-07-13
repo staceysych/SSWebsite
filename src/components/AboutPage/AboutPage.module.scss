@@ -1,0 +1,28 @@
+.AboutPage {
+  background-color: $bgLightColor;
+  height: 100vh;
+}
+
+.redCircle {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: -140px;
+  left: -160px;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.me {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 135px;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
