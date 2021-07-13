@@ -4,13 +4,45 @@
 }
 
 .header {
-  color: $mainRedColor;
   margin: 0;
-  font-size: 100px;
+  font-size: 130px;
   position: absolute;
-  top: 120px;
-  left: 150px;
+  top: 155px;
+  left: -160px;
   z-index: 9;
+  background: linear-gradient(to right, $mainRedColor 0, $mainLightColor 10%, $mainRedColor 20%);
+  background-position: 0;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  white-space: nowrap;
+  animation: shine 4s infinite linear;
+  animation-fill-mode: forwards;
+  padding: 0 275px;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 1045px;
+  }
+  100% {
+    background-position: 1045px;
+  }
+}
+
+.subheader {
+  color: $mainLightColor;
+  margin: 0;
+  font-size: 20px;
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: lighter;
 }
 
 .redCircle {
@@ -22,6 +54,13 @@
   img {
     height: 100%;
     width: 100%;
+    animation: spinClockwise 50s linear infinite;
+  }
+}
+
+@keyframes spinClockwise {
+  100% {
+    transform: rotate(360deg);
   }
 }
 
@@ -34,5 +73,20 @@
   img {
     height: 100%;
     width: 100%;
+    animation: spinCCW 60s linear infinite;
   }
+}
+
+@keyframes spinCCW {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.dottedLine {
+  border-bottom: 3px dotted $mainLightColor;
+  width: 92vw;
+  position: absolute;
+  bottom: 125px;
+  right: 0;
 }
