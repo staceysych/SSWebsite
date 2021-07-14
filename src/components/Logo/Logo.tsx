@@ -1,17 +1,16 @@
 import React from "react";
 
 import logoLight from "images/logoLight.svg";
-import logoDark from "images/logoDark.svg";
 import styles from "./Logo.module.scss";
 
 interface Props {
-  color: string;
+  style?: object;
 }
 
-const Logo: React.FC<Props> = ({ color }) => (
-  <div className={styles.Logo}>
+const Logo: React.FC<Props> = ({ style }) => (
+  <div className={styles.Logo} style={style}>
     <a href="/">
-      <img src={color === "light" ? logoLight : logoDark} alt="logo" />
+      <img src={logoLight} alt="logo" />
     </a>
   </div>
 );
