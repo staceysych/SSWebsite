@@ -5,7 +5,6 @@ import darkCircle from "images/darkCircle.png";
 
 import CrossIcon from "../CrossIcon";
 import Logo from "../Logo";
-import Copyright from "../Copyright";
 
 import styles from "./MainPage.module.scss";
 
@@ -25,9 +24,8 @@ const MainPage: React.FC = () => (
     </div>
     <Header />
     <div className={styles.dottedLine} />
-    <Logo color="light" />
+    <Logo />
     <h2 className={styles.subheader}>Full stack developer</h2>
-    <Copyright />
   </div>
 );
 

@@ -1,5 +1,4 @@
 .AboutPage {
-  background-color: $bgLightColor;
   height: 100vh;
 }
 
@@ -19,10 +18,46 @@
   width: 400px;
   height: 400px;
   position: absolute;
-  top: 135px;
+  top: 130px;
+  left: 50px;
+
   img {
     height: 100%;
     width: 100%;
     object-fit: contain;
   }
+}
+
+.vector {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  top: 415px;
+  left: 40px;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+.description {
+  position: absolute;
+  top: 200px;
+  right: 120px;
+  color: $mainLightColor;
+  width: 500px;
+
+  span {
+    font-size: 18px;
+    line-height: 35px;
+  }
+}
+
+.header {
+  color: $mainRedColor;
+  font-size: 50px;
+  text-align: right;
+  border-bottom: 3px solid;
 }

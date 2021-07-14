@@ -23,4 +23,13 @@ body {
   height: 100%;
   position: relative;
   min-height: 100vh;
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+.active {
+  &::after {
+    left: 0;
+    width: 100%;
+  }
 }
