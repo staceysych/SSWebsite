@@ -8,6 +8,7 @@ import { IAppState } from "./utils/interfaces";
 import MainPage from "./components/MainPage";
 import AboutPage from "./components/AboutPage/AboutPage";
 import Copyright from "./components/Copyright";
+import SkillsPage from "./components/SkillsPage/SkillsPage";
 
 import "./styles/main.scss";
 
@@ -19,6 +20,7 @@ class AppContainer extends Component<{}, IAppState> {
           <Switch>
             <Route component={MainPage} path="/" exact />
             <Route component={AboutPage} path="/about" />
+            <Route component={SkillsPage} path="/skills" />
           </Switch>
           <Copyright />
         </div>

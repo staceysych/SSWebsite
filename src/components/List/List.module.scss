@@ -1,0 +1,17 @@
+.List {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.link {
+  font-size: $mainFontSize;
+  color: $mainLightColor;
+  position: relative;
+}

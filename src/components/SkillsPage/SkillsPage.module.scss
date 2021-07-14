@@ -1,0 +1,66 @@
+.SkillsPage {
+  height: 100vh;
+}
+
+.darkCircle {
+  width: 400px;
+  height: 350px;
+  position: absolute;
+  top: -30px;
+  right: -10px;
+  img {
+    height: 100%;
+    width: 100%;
+    transform: rotate(-55deg);
+    opacity: 0.5;
+  }
+}
+
+.skillsSet {
+  position: absolute;
+  display: flex;
+  top: 370px;
+  right: 100px;
+  width: 600px;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  h3 {
+    font-size: 22px;
+    color: $mainRedColor;
+    border-bottom: 2px solid;
+    width: 120px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.header {
+  color: $mainRedColor;
+  font-size: 50px;
+  text-align: right;
+  border-bottom: 3px solid;
+  position: absolute;
+  top: 85px;
+  right: 124px;
+  width: 425px;
+}
+
+.subheader {
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+  color: $mainLightColor;
+  margin: 0;
+  border-bottom: 2px solid;
+}
+
+.circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: $mainRedColor;
+  position: absolute;
+}

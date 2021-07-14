@@ -10,6 +10,7 @@ interface Props {
 const Header: React.FC<Props> = ({ style }) => (
   <NavBar style={style}>
     <NavItem name="about" path="about" />
+    <NavItem name="skills" path="skills" />
     <NavItem name="works" path="works" />
     <NavItem name="feedbacks" path="feedbacks" />
     <NavItem name="contacts" path="contacts" />
